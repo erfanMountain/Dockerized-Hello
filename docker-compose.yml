@@ -1,0 +1,10 @@
+version: '3.7'
+
+services: 
+  web: 
+    build: . 
+    command: python /Hello_world/manage.py runserver 0.0.0.0:8082 
+    volumes: 
+      - .:/Hello_world
+    ports: 
+      - 8082:8082
